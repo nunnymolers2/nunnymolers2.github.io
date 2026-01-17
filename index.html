@@ -200,6 +200,16 @@
         margin-right: 8px;
       }
 
+      .contact-note {
+        background-color: #111;
+        border: 1px solid #333;
+        padding: 20px;
+        border-radius: 4px;
+        text-align: center;
+        color: #aaa;
+        font-size: 0.95em;
+      }
+
       footer {
         text-align: center;
         padding-top: 40px;
@@ -224,15 +234,15 @@
       <header>
         <h1>Soren Lera</h1>
         <p class="subtitle">
-          Computer Science Student | Seeking Summer 2026 Internships
+          Computer Science & Mathematics Student | Hamilton College '27
         </p>
         <div class="links">
-          <a href="mailto:your.email@example.com">email@example.com</a>
-          <a href="https://github.com/yourusername" target="_blank"
-            >github.com/yourusername</a
+          <a href="mailto:slera@hamilton.edu">slera@hamilton.edu</a>
+          <a href="https://github.com/nunnymolers2" target="_blank"
+            >github.com/nunnymolers2</a
           >
-          <a href="https://linkedin.com/in/yourprofile" target="_blank"
-            >linkedin.com/in/yourprofile</a
+          <a href="https://linkedin.com/in/soren-lera" target="_blank"
+            >LinkedIn</a
           >
           <a href="resume.pdf" target="_blank">resume.pdf</a>
         </div>
@@ -241,10 +251,13 @@
       <section>
         <h2>About</h2>
         <p class="about">
-          Hi, I'm a Computer Science student at [University Name], expected to
-          graduate in [Month Year]. I'm passionate about software development
-          and building practical solutions to real-world problems. Currently
-          seeking summer 2026 internship opportunities in software engineering.
+          Hi, I'm Soren! I'm a Computer Science major and Mathematics minor at
+          Hamilton College with a 3.87 GPA, graduating in May 2027. I'm
+          passionate about accessible computing, distributed systems, and
+          building technologies that make a real impact. Currently, I'm working
+          on optimizing distributed processing engines and developing assistive
+          technology for nonverbal communication. I'm seeking summer 2026
+          internship opportunities in software engineering.
         </p>
       </section>
 
@@ -252,60 +265,71 @@
         <h2>Projects</h2>
 
         <div class="project">
-          <h3>Project Name 1</h3>
+          <h3>Pectogram</h3>
           <p class="project-description">
-            Brief description of what the project does and what problem it
-            solves. Include key features and any notable results or metrics.
+            Full-stack web application enabling nonverbal autistic PECS users to
+            communicate with untrained peers. Published demo at ACCESS
+            conference. Led user studies with faculty and conducted reflexive
+            thematic analysis to extend previous research.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">JavaScript</span>
+            <span class="tech">Web Development</span>
+            <span class="tech">Accessibility</span>
+            <span class="tech">MAXQda</span>
+          </div>
+          <a
+            href="https://github.com/nunnymolers2/pectogram"
+            class="project-link"
+            target="_blank"
+            >View on GitHub →</a
+          >
+        </div>
+
+        <div class="project">
+          <h3>Apache Flink Optimization Research</h3>
+          <p class="project-description">
+            Optimizing Apache Flink distributed processing engine by testing CPU
+            scheduler configurations in controlled Cloudlab environments.
+            Investigating machine learning inference layer integration to
+            improve scheduler performance, extending Boston University graduate
+            research.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">Apache Flink</span>
+            <span class="tech">Cloudlab</span>
+            <span class="tech">Machine Learning</span>
+            <span class="tech">Distributed Systems</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Historical Japanese Theater VR Experience</h3>
+          <p class="project-description">
+            Created immersive VR experience in Unreal Engine recreating a
+            historical Japanese silent film theater. Developed as Digital
+            Initiatives Intern to preserve and showcase cultural heritage.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">Unreal Engine</span>
+            <span class="tech">VR</span>
+            <span class="tech">3D Modeling</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Team Lucidity - ML Productivity Manager</h3>
+          <p class="project-description">
+            Machine-learning productivity manager that achieved Global Finalist
+            status at the Conrad Challenge (top teams out of 600+ competing
+            globally). Implemented generative adversarial networks for
+            personalized productivity insights.
           </p>
           <div class="tech-stack">
             <span class="tech">Python</span>
-            <span class="tech">React</span>
-            <span class="tech">Node.js</span>
-            <span class="tech">PostgreSQL</span>
+            <span class="tech">Machine Learning</span>
+            <span class="tech">GANs</span>
           </div>
-          <a
-            href="https://github.com/yourusername/project1"
-            class="project-link"
-            target="_blank"
-            >View on GitHub →</a
-          >
-        </div>
-
-        <div class="project">
-          <h3>Project Name 2</h3>
-          <p class="project-description">
-            Brief description of what the project does and what problem it
-            solves. Include key features and any notable results or metrics.
-          </p>
-          <div class="tech-stack">
-            <span class="tech">Java</span>
-            <span class="tech">Spring Boot</span>
-            <span class="tech">MongoDB</span>
-          </div>
-          <a
-            href="https://github.com/yourusername/project2"
-            class="project-link"
-            target="_blank"
-            >View on GitHub →</a
-          >
-        </div>
-
-        <div class="project">
-          <h3>Project Name 3</h3>
-          <p class="project-description">
-            Brief description of what the project does and what problem it
-            solves. Include key features and any notable results or metrics.
-          </p>
-          <div class="tech-stack">
-            <span class="tech">C++</span>
-            <span class="tech">OpenGL</span>
-          </div>
-          <a
-            href="https://github.com/yourusername/project3"
-            class="project-link"
-            target="_blank"
-            >View on GitHub →</a
-          >
         </div>
       </section>
 
@@ -315,31 +339,50 @@
           <div class="skill-category">
             <h3>Languages</h3>
             <ul>
+              <li>JavaScript</li>
               <li>Python</li>
               <li>Java</li>
               <li>C++</li>
-              <li>JavaScript</li>
-              <li>SQL</li>
+              <li>Ruby</li>
+              <li>Rust</li>
+              <li>Scheme</li>
+              <li>Prolog</li>
+              <li>Clojure</li>
+              <li>Assembly</li>
             </ul>
           </div>
           <div class="skill-category">
-            <h3>Frameworks & Tools</h3>
+            <h3>Tools & Frameworks</h3>
             <ul>
-              <li>React</li>
-              <li>Node.js</li>
               <li>Git</li>
-              <li>Docker</li>
-              <li>Linux</li>
+              <li>Apache Flink</li>
+              <li>Cloudlab</li>
+              <li>Unity</li>
+              <li>Godot</li>
+              <li>Unreal Engine</li>
+              <li>Aframe VR</li>
+              <li>MAXQda</li>
+              <li>Photoshop</li>
             </ul>
           </div>
           <div class="skill-category">
-            <h3>Concepts</h3>
+            <h3>Machine Learning</h3>
             <ul>
-              <li>Data Structures</li>
-              <li>Algorithms</li>
-              <li>OOP</li>
-              <li>REST APIs</li>
-              <li>Databases</li>
+              <li>GANs</li>
+              <li>Linear Regression</li>
+              <li>Logistic Regression</li>
+              <li>Naive Bayes</li>
+              <li>Supervised Learning</li>
+              <li>Unsupervised Learning</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Research Methods</h3>
+            <ul>
+              <li>Qualitative Coding</li>
+              <li>Thematic Analysis</li>
+              <li>Affinity Diagramming</li>
+              <li>User Study Design</li>
             </ul>
           </div>
         </div>
@@ -349,28 +392,137 @@
         <h2>Experience</h2>
 
         <div class="experience-item">
-          <h3>Position Title | Company/Organization Name</h3>
-          <p class="experience-meta">Month Year - Month Year</p>
+          <h3>Undergraduate Researcher | Prof. Dong, Hamilton College</h3>
+          <p class="experience-meta">August 2025 - Present</p>
           <ul>
-            <li>Description of responsibility or achievement</li>
-            <li>Description of responsibility or achievement</li>
-            <li>Description of responsibility or achievement</li>
+            <li>
+              Optimize Apache Flink distributed processing engine by testing CPU
+              scheduler configurations
+            </li>
+            <li>
+              Investigate machine learning inference layer integration to
+              improve CPU scheduler performance
+            </li>
           </ul>
         </div>
 
         <div class="experience-item">
-          <h3>Position Title | Company/Organization Name</h3>
-          <p class="experience-meta">Month Year - Month Year</p>
+          <h3>
+            Undergraduate Researcher | Prof. Morrison Smith, Hamilton College
+          </h3>
+          <p class="experience-meta">May 2025 - Present</p>
           <ul>
-            <li>Description of responsibility or achievement</li>
-            <li>Description of responsibility or achievement</li>
-            <li>Description of responsibility or achievement</li>
+            <li>
+              Led user studies with faculty and conducted reflexive thematic
+              analysis using MAXQda
+            </li>
+            <li>
+              Developed Pectogram web application for nonverbal autistic
+              communication; published demo at ACCESS conference
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>
+            Digital Initiatives Intern | LITS Department, Hamilton College
+          </h3>
+          <p class="experience-meta">January 2025 - Present</p>
+          <ul>
+            <li>
+              Developed custom website for faculty showcasing interdisciplinary
+              video essay work
+            </li>
+            <li>
+              Created VR experience in Unreal Engine recreating a historical
+              Japanese silent film theater
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Hamilton Innovation Lab Fellow | Hamilton College</h3>
+          <p class="experience-meta">July - August 2025</p>
+          <ul>
+            <li>
+              Selected for competitive three-week entrepreneurship fellowship
+              ($1,500 stipend)
+            </li>
+            <li>
+              Developed concept from ideation through functional prototype
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Software Intern | QOOM</h3>
+          <p class="experience-meta">Spring 2024 - Present</p>
+          <ul>
+            <li>
+              Developed various AI-based web tools to assist beginning
+              developers in learning how to build their own IDE
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Web Development Coach | Applied Computing Foundation</h3>
+          <p class="experience-meta">Spring 2024 - Summer 2024</p>
+          <ul>
+            <li>
+              Designed and taught original web development curriculum covering
+              AI and web-based VR to middle schoolers at Branksome Hall Asia
+            </li>
           </ul>
         </div>
       </section>
 
+      <section>
+        <h2>Honors & Awards</h2>
+        <div class="experience-item">
+          <h3>Global Finalist | Conrad Challenge</h3>
+          <p class="experience-meta">April 2020</p>
+          <ul>
+            <li>
+              Global Finalist with Team Lucidity out of 600+ teams competing
+              globally
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Honorable Mention | Aspirations in Computing</h3>
+          <p class="experience-meta">March 2022</p>
+          <ul>
+            <li>
+              San Francisco Bay Area Affiliate Honorable Mention for
+              demonstrating considerable interest and contribution to Computer
+              Science
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Coding Samples</h2>
+        <div class="contact-note">
+          <p>
+            Additional coding samples and project repositories available upon
+            request.
+          </p>
+          <p style="margin-top: 10px">
+            Contact me at
+            <a
+              href="mailto:slera@hamilton.edu"
+              style="color: #fff; border-bottom: 1px solid #666"
+              >slera@hamilton.edu</a
+            >
+            for more information.
+          </p>
+        </div>
+      </section>
+
       <footer>
-        <p>Built with HTML & CSS | © 2026 Your Name</p>
+        <p>Built with HTML & CSS | © 2026 Soren Lera</p>
       </footer>
     </div>
   </body>
