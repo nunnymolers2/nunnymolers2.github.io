@@ -1,1 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soren Lera - Computer Science Student</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
+      body {
+        font-family: "JetBrains Mono", monospace;
+        background-color: #0a0a0a;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      header {
+        border-bottom: 2px solid #333;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .subtitle {
+        font-size: 1.1em;
+        color: #888;
+        margin-bottom: 20px;
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .links a {
+        color: #e0e0e0;
+        text-decoration: none;
+        border: 1px solid #444;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: all 0.3s;
+        font-size: 0.9em;
+      }
+
+      .links a:hover {
+        border-color: #fff;
+        background-color: #111;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        color: #fff;
+        border-left: 3px solid #fff;
+        padding-left: 15px;
+      }
+
+      .about {
+        font-size: 1.05em;
+        line-height: 1.8;
+        color: #ccc;
+      }
+
+      .project {
+        background-color: #111;
+        border: 1px solid #222;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+      }
+
+      .project:hover {
+        border-color: #444;
+      }
+
+      .project h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      .project-description {
+        color: #aaa;
+        margin-bottom: 15px;
+        font-size: 0.95em;
+      }
+
+      .tech-stack {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+      }
+
+      .tech {
+        background-color: #1a1a1a;
+        color: #888;
+        padding: 4px 12px;
+        border-radius: 3px;
+        font-size: 0.85em;
+        border: 1px solid #2a2a2a;
+      }
+
+      .project-link {
+        color: #e0e0e0;
+        text-decoration: none;
+        border-bottom: 1px solid #444;
+        font-size: 0.9em;
+      }
+
+      .project-link:hover {
+        border-bottom-color: #fff;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .skill-category h3 {
+        font-size: 1em;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      .skill-category ul {
+        list-style: none;
+      }
+
+      .skill-category li {
+        color: #aaa;
+        padding: 5px 0;
+        font-size: 0.9em;
+      }
+
+      .skill-category li:before {
+        content: "▹ ";
+        color: #666;
+        margin-right: 8px;
+      }
+
+      .experience-item {
+        margin-bottom: 30px;
+        padding-left: 20px;
+        border-left: 2px solid #222;
+      }
+
+      .experience-item h3 {
+        font-size: 1.1em;
+        color: #fff;
+        margin-bottom: 5px;
+      }
+
+      .experience-meta {
+        color: #666;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+      }
+
+      .experience-item ul {
+        list-style: none;
+        color: #aaa;
+        font-size: 0.95em;
+      }
+
+      .experience-item li {
+        padding: 3px 0;
+      }
+
+      .experience-item li:before {
+        content: "• ";
+        color: #666;
+        margin-right: 8px;
+      }
+
+      footer {
+        text-align: center;
+        padding-top: 40px;
+        border-top: 2px solid #333;
+        color: #666;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2em;
+        }
+
+        .links {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Soren Lera</h1>
+        <p class="subtitle">
+          Computer Science Student | Seeking Summer 2026 Internships
+        </p>
+        <div class="links">
+          <a href="mailto:your.email@example.com">email@example.com</a>
+          <a href="https://github.com/yourusername" target="_blank"
+            >github.com/yourusername</a
+          >
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"
+            >linkedin.com/in/yourprofile</a
+          >
+          <a href="resume.pdf" target="_blank">resume.pdf</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>About</h2>
+        <p class="about">
+          Hi, I'm a Computer Science student at [University Name], expected to
+          graduate in [Month Year]. I'm passionate about software development
+          and building practical solutions to real-world problems. Currently
+          seeking summer 2026 internship opportunities in software engineering.
+        </p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+          <h3>Project Name 1</h3>
+          <p class="project-description">
+            Brief description of what the project does and what problem it
+            solves. Include key features and any notable results or metrics.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">Python</span>
+            <span class="tech">React</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">PostgreSQL</span>
+          </div>
+          <a
+            href="https://github.com/yourusername/project1"
+            class="project-link"
+            target="_blank"
+            >View on GitHub →</a
+          >
+        </div>
+
+        <div class="project">
+          <h3>Project Name 2</h3>
+          <p class="project-description">
+            Brief description of what the project does and what problem it
+            solves. Include key features and any notable results or metrics.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">Java</span>
+            <span class="tech">Spring Boot</span>
+            <span class="tech">MongoDB</span>
+          </div>
+          <a
+            href="https://github.com/yourusername/project2"
+            class="project-link"
+            target="_blank"
+            >View on GitHub →</a
+          >
+        </div>
+
+        <div class="project">
+          <h3>Project Name 3</h3>
+          <p class="project-description">
+            Brief description of what the project does and what problem it
+            solves. Include key features and any notable results or metrics.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">C++</span>
+            <span class="tech">OpenGL</span>
+          </div>
+          <a
+            href="https://github.com/yourusername/project3"
+            class="project-link"
+            target="_blank"
+            >View on GitHub →</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Tools</h3>
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Git</li>
+              <li>Docker</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Concepts</h3>
+            <ul>
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+              <li>OOP</li>
+              <li>REST APIs</li>
+              <li>Databases</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+          <h3>Position Title | Company/Organization Name</h3>
+          <p class="experience-meta">Month Year - Month Year</p>
+          <ul>
+            <li>Description of responsibility or achievement</li>
+            <li>Description of responsibility or achievement</li>
+            <li>Description of responsibility or achievement</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Position Title | Company/Organization Name</h3>
+          <p class="experience-meta">Month Year - Month Year</p>
+          <ul>
+            <li>Description of responsibility or achievement</li>
+            <li>Description of responsibility or achievement</li>
+            <li>Description of responsibility or achievement</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        <p>Built with HTML & CSS | © 2026 Your Name</p>
+      </footer>
+    </div>
+  </body>
+</html>
